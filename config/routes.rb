@@ -3,4 +3,8 @@ Rails.application.routes.draw do
   get 'welcome/index'
  root 'welcome#index'
  resources :notes
+ authenticated :user do
+  root "notes#index", as: "authenticated_root"
 end
+end
+
