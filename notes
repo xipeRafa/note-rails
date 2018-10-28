@@ -1,0 +1,29 @@
+https://www.youtube.com/watch?v=bDbPiaVl2g4&list=PL23ZvcdS3XPLNdRYB_QyomQsShx59tpc-&index=11
+
+//noutes-rails
+
+rails g controller welcome index
+root 'welcome#index' //routes.rb
+
+rails g model Note title:string content:text
+rake db:migrate
+
+ rails g controller Notes
+
+rails generate simple_form:install
+
+rails g devise:install
+rails g devise:view
+rails g devise User
+rake db:migrate
+
+rails g migration add_user_id_to_notes user_id:integer
+rake db:migrate
+
+
+
+
+
+
+
+
